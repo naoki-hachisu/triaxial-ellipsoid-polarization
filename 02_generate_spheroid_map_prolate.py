@@ -202,5 +202,5 @@ if __name__ == "__main__":
             Pi_list[i, j] = get_Pi(I, Q, U)
 
     df = pd.DataFrame(Pi_list, index=theta_list, columns=a_list)
-    df.to_csv('spheroid_map_prolate.csv', index=True, encoding='utf-8-sig')
+    df.to_csv('data/spheroid_map_prolate.csv', index=True, encoding='utf-8-sig')
     print("CSV saved successfully.")
