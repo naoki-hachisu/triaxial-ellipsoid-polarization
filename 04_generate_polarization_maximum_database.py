@@ -159,7 +159,7 @@ def find_maximum_in_grid(a, b, theta_array, phi_array, n_array, r2_array, grid):
 # ==========================================
 if __name__ == "__main__":
     timestamp = datetime.now().strftime("%Y%m%d_%H%M")
-    output_filename = f"ellipsoid_polarization_maximum_db_{timestamp}.h5"
+    output_filename = f"data/ellipsoid_polarization_maximum_database_{timestamp}.h5"
     
     print(f"Starting Fast Coarse-to-Fine Search. Saving to: {output_filename}")
     
