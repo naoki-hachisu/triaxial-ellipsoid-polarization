@@ -201,7 +201,7 @@ if __name__ == "__main__":
                 w_Theta_array, dPhi, x_sphere, y_sphere, z_sphere
                 )
             Pi_list[i, j] = get_Pi(I, Q, U)
-
+    
     df = pd.DataFrame(Pi_list, index=theta_list, columns=a_inverse_list)
-    df.to_csv('spheroid_map_oblate.csv', index=True, encoding='utf-8-sig')
+    df.to_csv('data/spheroid_map_oblate.csv', index=True, encoding='utf-8-sig')
     print("CSV saved successfully.")
